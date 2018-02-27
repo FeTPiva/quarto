@@ -1,0 +1,44 @@
+$ git config --global user.name "nufgh"    olha, fui eu (assinatura)
+$ git config --global user.email fefe@gmail...     mandar email
+
+pra clonar:
+git clone endereço.git isso dentro da pasta que eu quero -> ir na pasta e selecionar git bash here
+
+pra salvar do pc pro online:
+git status   //pra saber o q q ta rolando
+
+git add .    //pra add tudoooo
+
+git commit -m "ahsdbgaisdbh"  salvo no.git
+
+git push origin master //atualizar repositorio remoto
+
+
+
+
+
+Fazer download do git
+
+
+
+git pull pra puxar as infos
+git push origin pra mandar pro git
+
+
+
+
+git checkout -b nomedobranch  //criar o brach/mudar pro branch
+
+
+git add . //add tudo
+comit etc
+git push origin nomedobranch // atualiza no branch
+
+
+git checkout master  // muda pra pasta do master
+
+
+
+http://www.oracle.com/technetwork/java/javafxscenebuilder-1x-archive-2199384.html#javafx-scenebuilder-2.0-oth-JPR
+
+cabo stp é blindado contra interferecia=> melhor (é um cabo ethernet)

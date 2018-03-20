@@ -1,0 +1,51 @@
+h1{
+font-size: 50px;
+color: rgb(247, 247, 247);
+
+}
+
+.container{
+    background-color: rgb(79, 104, 184);
+
+}
+#row1 >p {
+    font-size: 10px;
+
+}
+
+#row1 >p {
+    font-size: 30px;
+
+}
+#row2{
+    font-size: 40px;
+}
+#row3{
+    font-size: 50px;
+    }
+
+
+    label + input{
+        border: 5px solid rgb(79, 104, 184);
+    }
+
+    li:first-child{
+
+        background-color: aquamarine;
+    }
+    li:last-child{
+        background-color: crimson;
+
+    }
+
+    li:nth-child(2){
+        color: cadetblue;
+    }
+
+    .ul-top{
+        width: 50%;
+        height: 50%;
+        padding: 10% 20%;
+        border: 3% solid rebeccapurple;
+
+    }

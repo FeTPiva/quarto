@@ -1,51 +1,58 @@
 h1{
-font-size: 50px;
-color: rgb(247, 247, 247);
-
+    font-size: 50px;
+    color: rgb(247, 247, 247);
 }
 
 .container{
     background-color: rgb(79, 104, 184);
-
 }
+
 #row1 >p {
     font-size: 10px;
-
 }
 
 #row1 >p {
-    font-size: 30px;
-
+   font-size: 30px;
 }
+
 #row2{
     font-size: 40px;
 }
+
 #row3{
     font-size: 50px;
     }
 
-
-    label + input{
-        border: 5px solid rgb(79, 104, 184);
+label + input{
+    border: 5px solid rgb(79, 104, 184);
     }
 
-    li:first-child{
+li:first-child{
 
-        background-color: aquamarine;
-    }
-    li:last-child{
-        background-color: crimson;
-
+    background-color: aquamarine;
     }
 
-    li:nth-child(2){
-        color: cadetblue;
+li:last-child{
+
+    background-color: crimson;
     }
 
-    .ul-top{
-        width: 50%;
-        height: 50%;
-        padding: 10% 20%;
-        border: 3% solid rebeccapurple;
+li:nth-child(2){
 
+    color: cadetblue;
     }
+
+.ul-top{
+    width: 50%;
+    height: 50%;
+    padding: 10% 20%;
+    border: 3px solid rebeccapurple;
+    }
+
+body{
+    background-image: url("../images/rasp3.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-family: 'Pacifico', cursive;
+
+}

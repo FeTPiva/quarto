@@ -1,0 +1,18 @@
+https://www.programiz.com/c-programming
+
+um 
+ponteiro é uma variavel que armazena um endereço de memoria
+
+
+int d;
+
+p_variavel = &d;
+
+
+*p_variavel;
+
+
+http://asf.atmel.com/docs/latest/sam4s/html/ioport_quickstart.html
+
+
+

@@ -1,5 +1,5 @@
 
-
+/*
 var thra1 = document.querySelector("#ra12345671").querySelector("th");
 
 var navBarBrand1 = document.querySelector(".navbar-brand");
@@ -33,4 +33,48 @@ document.querySelector(ra).querySelector(".r").textContent = "passssou";
 
 } else{
     document.querySelector(ra).querySelector(".r").textContent = " nao passssou";
+} */
+
+trs = document.querySelectorAll(".aluno");
+for (var i = 0; i < trs.length; i++) {
+
+    calculamedia(trs[i]);
+
 }
+
+function calculamedia(aluno) {
+    var p1 = parseFloat(aluno.querySelector(".p1").textContent);
+    var p2 = parseFloat(aluno.querySelector(".p2").textContent);
+    var p3 = parseFloat(aluno.querySelector(".p3").textContent);
+    var p4 = parseFloat(aluno.querySelector(".p4").textContent);
+
+
+    var media = (p1 + p2 + p3 + p4) / 4.0;
+    var aprovado = "";
+
+    if (media >= 6) {
+
+        aprovado = "Sim";
+
+    } else {
+
+        aprovado = "nao";
+    }
+
+    aluno.querySelector(".media").textContent = media;
+    aluno.querySelector(".aprovado").textContent = aprovado;
+
+    console.log(aluno);
+
+}
+
+
+var botao = document.querySelector(".adiciona-button");
+
+botao.addEventListener("click", function (event) { event.preventDefault();
+
+    var ra = document.querySelector(".form-adiciona").querySelector("#ra");
+
+    console.log(ra.textContent);
+
+});

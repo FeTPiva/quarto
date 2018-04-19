@@ -1,0 +1,158 @@
+
+.img{
+    height: 225;
+     width: 100%;    
+}
+
+.mt-6, .my-6 {
+    margin-top: 5rem!important;
+}
+
+.mt-7, .my-7 {
+    margin-top: 8rem!important;
+}
+
+
+.px-6 {
+    margin-left: 6rem!important;
+    margin-right: 14rem! important;
+}
+
+input{
+    margin-top: 1px! important;
+    margin-bottom: .5rem! important;
+    width: 100%;
+}
+
+
+h2{
+    font-size: 20px;
+    margin-left: 1.7rem! important; 
+}
+
+mx-6{
+    margin-left: 5rem! important;
+    margin-right: 5rem! important;
+}
+
+h1{
+    font-size: 50px;
+    padding-bottom: 2rem! important;
+    color: white;
+    font-size: 50px;
+    line-height: 1.5;
+    font-weight: 300;
+    font-family: 'Lato';
+}
+.container-fluid#header{
+    background-image: url('../images/img_bg_2.jpg'); 
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    font-family: 'Lato', Arial, sans-serif;
+    z-index: 0;
+}
+
+form{
+    width: 100%;
+    margin-left: 1.5rem! important;
+    margin-right: 1.5rem! important;
+}
+
+button#form_header{
+    width: 100%;
+    background-color: blue;
+}
+
+.nav .float-md-right{
+    float: right;
+}
+
+.navbar-header a:link, a:visited, a:active, a:hover{
+    font-size: 20px;
+    color: white;
+    font-family: 'Lato';
+}
+
+.nav .float-md-right a:link, a:visited, a:active{
+    color: gainsboro;
+    font-family: 'Lato';
+}
+
+.nav .float-md-right a:hover{
+    color: white;
+    font-family: 'Lato';
+    font-size: 1rem! important;
+}
+
+h3{
+    font-family: 'Lato';
+    color: black;
+    font-size: 50px;
+}
+
+.container #destinos_famosos{
+    font-family: 'Lato';
+    color: gray;
+    font-size: 20px;
+}
+
+.mx-6{
+    margin-left: 11rem! important;
+    margin-right: 11rem! important;
+}
+
+#card{
+    border-color: white;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+    border-bottom-left-radius: 3.14;
+}
+
+h5{
+    font-size: 22px;
+    color:blue;
+}
+
+.card-body{
+    font-family: 'Lato';
+    color: black;
+    font-size: 15px;
+    padding-bottom: 0rem! important;
+}
+
+button#trip{
+    background-color: black;
+    color: white;
+    font-family: 'Lato';
+    width: 50%;
+    position:relative;
+    border-color: black;
+}
+
+.container-fluid#parallax { 
+    /* The image used */
+    background-image: url('../images/img_bg_1.jpg');
+
+    /* Full height */
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.py-6
+{
+   padding-bottom: 7rem! important; 
+   padding-top: 8rem! important; 
+}
+
+h6
+{
+ color: white;
+ font-family: 'Lato';
+ font-size: 62px; 
+ font-weight: 300;
+}

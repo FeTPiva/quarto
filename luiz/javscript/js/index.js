@@ -78,3 +78,4 @@ botao.addEventListener("click", function (event) { event.preventDefault();
     console.log(ra.textContent);
 
 });
+/

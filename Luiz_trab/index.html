@@ -9,8 +9,10 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/estilo.css">
-<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <title>TOP Viagens</title>
 </head>
 
@@ -23,167 +25,373 @@
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-<div class="container-fluid" id="header">
-    <nav class="nav navbar-default" role="navigation" id="primeiro">
-<div class="container">
-            <div class="row mt-3" id="menu">
-                <div class="navbar-header">
-                    <b><a class="nav-link" href="#">
-                        TOP Viagens</a></b>
-                </div>
-                <div class="col">
 
-                    <ul class="nav float-md-right">
+    <div class="container-fluid" id="header">
+        <nav class="nav navbar-default" role="navigation" id="primeiro">
+            <div class="container">
+                <div class="row mt-3" id="menu">
+                    <div class="navbar-header">
+                        <b>
+                            <a class="nav-link" href="#">
+                                TOP Viagens</a>
+                        </b>
+                    </div>
+                    <div class="col">
 
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Destino </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link"> Viagem </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link"> Preço </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link"> Contato </a>
-                        </li>
-                    </ul>
-                    
+                        <ul class="nav float-md-right">
+
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Destino </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link"> Viagem </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link"> Preço </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link"> Contato </a>
+                            </li>
+                        </ul>
+
+                    </div>
                 </div>
             </div>
-    </div>
-    </nav>
-    <div class="header mt-5">
-<div class="overlay"></div>
-<div class="row mt-6"></div>
-    <div class="row px-3 mx-3 mt-6">
+        </nav>
+        <div class="header mt-5">
+            <div class="overlay"></div>
+            <div class="row mt-6"></div>
+            <div class="row px-3 mx-3 mt-6">
                 <div class="col-md-5 mt-text text-left mt-7 px-6">
                     <h1>
                         Planejando viajar ao redor do mundo?
                     </h1>
                 </div>
                 <div class="col-md-3 mx-4" style="background-color:white;">
-                    
-                        <div class="row" style="height:7px;background-color:blue;"></div>
-                        
-                        <div class="row mt-3 mb-3 px-1">
-                            <h2>Planeje sua viagem</h2>
-                        </div>
 
-                        <div class="row">
-                            <form action="">
+                    <div class="row" style="height:7px;background-color:blue;"></div>
 
-                                <label for="nome"> Seu nome: </label><br>
-                                <center><input type="text"><br></center>
-                                <label for="atividades">Atividades: </label><br>
-                                <center><input type="text"><br></center>
-                                <label for="atividades">Destino: </label><br>
-                                <center><input type="text"><br></center>
-                                <label for="atividades">Data da viagem: </label><br>
-                                <center><input type="text"><br></center>
-                                 <center><button type="button" class="btn btn-primary my-3" id="form_header">Submit!</button></center> 
-                            </form>
-                        </div>
+                    <div class="row mt-3 mb-3 px-1">
+                        <h2>Planeje sua viagem</h2>
+                    </div>
+
+                    <div class="row">
+                        <form action="">
+
+                            <label for="nome"> Seu nome: </label>
+                            <br>
+                            <center>
+                                <input type="text">
+                                <br>
+                            </center>
+                            <label for="atividades">Atividades: </label>
+                            <br>
+                            <center>
+                                <input type="text">
+                                <br>
+                            </center>
+                            <label for="atividades">Destino: </label>
+                            <br>
+                            <center>
+                                <input type="text">
+                                <br>
+                            </center>
+                            <label for="atividades">Data da viagem: </label>
+                            <br>
+                            <center>
+                                <input type="text">
+                                <br>
+                            </center>
+                            <center>
+                                <button type="button" class="btn btn-primary my-3" id="form_header">Submit!</button>
+                            </center>
+                        </form>
+                    </div>
                 </div>
-        </div>
-            
+            </div>
+
             <div class="row my-5"></div>
-    </div>
+        </div>
     </div>
     <div class="container">
         <div class="row my-5"></div>
         <section>
             <div class="container text-center" id="destinos_famosos">
                 <h3 class="mb-3">Destinos mais famosos! </h3>
-                <p class="mx-6">Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
-                    
+                <p class="mx-6">Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam
+                    dolor eius.</p>
+
             </div>
             <div class="row my-5"></div>
         </section>
         <div class="container pr-1 pl-1 mx-center " id="container-cards">
             <div class="row">
-                
+
                 <div class="col-md-4 ">
-                    <a href="#"><div class="mb-4" id="card">
-                        
+                    <a href="#">
+                        <div class="mb-4" id="card">
+
                             <img class="card-img-top" src="images/img_1.jpg" style="">
-                        
 
-                        <div class="card-body text-center">
-                            <h5 class="my-3">New York, USA</h5>
-                            <p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident.</p>
+
+                            <div class="card-body text-center">
+                                <h5 class="my-3">New York, USA</h5>
+                                <p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident.</p>
+                            </div>
+                            <center>
+                                <button type="button" class="btn btn-primary my-3" id="trip">Schedule a Trip!</button>
+                            </center>
+
                         </div>
-                            <center><button type="button" class="btn btn-primary my-3" id="trip">Schedule a Trip!</button></center> 
+                    </a>
+                </div>
 
-                    </div></a>
-                 </div>
 
-            
-                  <div class="col-md-4 ">
-                    <a href="#"><div class="mb-4" id="card">
-                            <img class="card-img-top" src="images/img_2.jpg">
-                        <div class="card-body text-center">
-                            <h5 class="my-3">Seoul, South Korea</h5>
-                            <p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident.</p>
-                        </div>
-                            <center><button type="button" class="btn btn-primary my-3" id="trip">Schedule a Trip!</button></center> 
-
-                        </div></a>
-                      </div>
-                       <div class="col-md-4 ">
-                    <a href="#"><div class="mb-4" id="card">
-                            <img class="card-img-top" src="images/img_3.jpg">
-                        <div class="card-body text-center">
-                            <h5 class="my-3">Paris, France</h5>
-                            <p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident.</p>
-                        </div>
-                            <center><button type="button" class="btn btn-primary my-3" id="trip">Schedule a Trip!</button></center> 
-
-                        </div></a>
-                           </div>
                 <div class="col-md-4 ">
-                    <a href="#"><div class="mb-4" id="card">
+                    <a href="#">
+                        <div class="mb-4" id="card">
+                            <img class="card-img-top" src="images/img_2.jpg">
+                            <div class="card-body text-center">
+                                <h5 class="my-3">Seoul, South Korea</h5>
+                                <p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident.</p>
+                            </div>
+                            <center>
+                                <button type="button" class="btn btn-primary my-3" id="trip">Schedule a Trip!</button>
+                            </center>
+
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 ">
+                    <a href="#">
+                        <div class="mb-4" id="card">
+                            <img class="card-img-top" src="images/img_3.jpg">
+                            <div class="card-body text-center">
+                                <h5 class="my-3">Paris, France</h5>
+                                <p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident.</p>
+                            </div>
+                            <center>
+                                <button type="button" class="btn btn-primary my-3" id="trip">Schedule a Trip!</button>
+                            </center>
+
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 ">
+                    <a href="#">
+                        <div class="mb-4" id="card">
                             <img class="card-img-top" src="images/img_4.jpg" style="">
-                        <div class="card-body text-center">
-                            <h5 class="my-3">Sydney, Australia</h5>
-                            <p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident.</p>
-                        </div>
-                            <center><button type="button" class="btn btn-primary my-3" id="trip">Schedule a Trip!</button></center> 
+                            <div class="card-body text-center">
+                                <h5 class="my-3">Sydney, Australia</h5>
+                                <p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident.</p>
+                            </div>
+                            <center>
+                                <button type="button" class="btn btn-primary my-3" id="trip">Schedule a Trip!</button>
+                            </center>
 
-                        </div></a>
-                    </div>
-                       <div class="col-md-4 ">
-                     <a href="#"><div class="mb-4" id="card">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 ">
+                    <a href="#">
+                        <div class="mb-4" id="card">
                             <img class="card-img-top" src="images/img_5.jpg" style="">
-                        <div class="card-body text-center">
-                            <h5 class="my-3">Greece, Europe</h5>
-                            <p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident.</p>
-                        </div>
-                            <center><button type="button" class="btn btn-primary my-3" id="trip">Schedule a Trip!</button></center> 
+                            <div class="card-body text-center">
+                                <h5 class="my-3">Greece, Europe</h5>
+                                <p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident.</p>
+                            </div>
+                            <center>
+                                <button type="button" class="btn btn-primary my-3" id="trip">Schedule a Trip!</button>
+                            </center>
 
                         </div>
-                           </a> </div>
-                       <div class="col-md-4 "><a href="#"> 
-                    <div class="mb-4" id="card">
+                    </a>
+                </div>
+                <div class="col-md-4 ">
+                    <a href="#">
+                        <div class="mb-4" id="card">
                             <img class="card-img-top" src="images/img_6.jpg" style="">
-                        <div class="card-body text-center">
-                            <h5 class="my-3">Spain, Europe</h5>
-                            <p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident.</p>
+                            <div class="card-body text-center">
+                                <h5 class="my-3">Spain, Europe</h5>
+                                <p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident.</p>
+                            </div>
+                            <center>
+                                <button type="button" class="btn btn-primary my-3" id="trip">Schedule a Trip!</button>
+                            </center>
+
                         </div>
-                            <center><button type="button" class="btn btn-primary my-3" id="trip">Schedule a Trip!</button></center> 
-
-                           </div></a>
-                           </div>
+                    </a>
                 </div>
-                   
+            </div>
 
-                </div>
+
+        </div>
         <div class="row py-5"></div>
+    </div>
+
+    <div class="container-fluid" id="parallax">
+        <h6 class="text-center py-6 mx-3">Temos atendimento e serviços de primeira linha!</h6>
+    </div>
+
+
+
+    <!--assine... -->
+    <div id="assine">
+        <div class="container-fluid text-center">
+            <div class="row">
+                <p class="mb-3" id="assin">Assine</p>
+
+                <p class="" id="asslo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ullamcorper pellentesque sodales. Curabitur
+                    accumsan quam nec dui venenatis feugiat. Donec.
+                </p>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-8 offset-2 mt-3">
+                
+                    <form class="form-inline" id="assForm">
+                        <div class="form-group mx-sm-5 mb-2">
+                            <label for="inputPassword2" class="sr-only">Email</label>
+                            <input type="text" class="form-control" id="inputPasswsord2" placeholder="Seu Email">
+                        </div>
+                        <div class="form-group mx-sm-5 mb-2">
+                            <button type="button" class="btn btn-primary mx-sm-5 mb-2 " id="assBtn"> Assinar</button>
+                        </div>
+                    </form>
+                
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <!--FINAL -->
+
+    <footer>
+        <div class="container">
+
+            <div class="row py-5">
+                <div class="col-md-4">
+                    <h6 id="sob">
+                        <b>SOBRE NÓS</b>
+                    </h6>
+                    <p class="text-muted">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore eos molestias quod sint ipsum possimus temporibus officia
+                        iste perspiciatis consectetur in fugiat repudiandae cum. Totam cupiditate nostrum ut neque ab?
+                    </p>
+
+                </div>
+                <div class="col-md-2 offset-1">
+                    <h6 id="sob">DESTINOS</h6>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#" class="text-info"> Europa</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-info"> Australia</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-info"> Ásia</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-info"> Canadá</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-info"> Dubai</a>
+                        </li>
+                    </ul>
                 </div>
 
- <div class="container-fluid" id="parallax">
-     <h6 class="text-center py-6 mx-3">Temos atendimento e serviços de primeira linha!</h6>
-    </div>   
+                <div class="col-md-2">
+                    <h6 id="sob">HOTÉIS</h6>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#" class="text-info"> Luxe Hotel</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-info"> Italy 5 Star Hotel</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-info"> Dubai Hotel</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-info"> Deluxe Hotel</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-info"> BoraBora Hotel</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3">
+                    <h6 id="sob">ENTRE EM CONTATO</h6>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#" class="text-info">
+                                <i class="fa fa-phone"> +55 11 4239 3000</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-info">
+                                <i class="fa fa-envelope"></i> maua@maua.br</a>
+                            <!--glyphcon :( -->
+                        </li>
+                        <li>
+                            <a href="#" class="text-info">
+                                <i class="fa fa-comments"></i> Chat ao Vivo </a>
+                        </li>
+                    </ul>
+                </div>
+                <hr>
+                <div class="row pt-4">
+                    <div class="col-12 mb-0 ml-3" id="fim">
+                        <p class="text-muted mb-0"> © 2018. All Rights Reserved.</p>
+                        <p class="text-muted mt-0">Desenvolvido por
+                            <a href="#" class="text-info"> Mauá</a> Imagens:
+                            <a href="#" class="text-info"> Unsplash</a>
+                        </p>
+                    </div>
+                    <div class="col-md-12 offset-5 mb-5 mt-0 pull-right">
+                        <ul align="right" class="list-inline">
+                            <li class="list-inline-item">
+                                <a href="#" class="text-info">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="text-info">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="text-info">
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="text-info">
+                                    <i class="fa fa-dribbble"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row py-5">
+
+            </div>
+        </div>
+
+
+
+    </footer>
+
+
+
+
+
 </body>
 
 </html>

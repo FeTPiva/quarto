@@ -156,3 +156,60 @@ h6
  font-size: 62px; 
  font-weight: 300;
 }
+
+
+
+
+
+#assine{
+    background-color: #0b7886;
+    color: white;
+    font-family: 'Lato';
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding-left: 15em;
+    padding-right: 15em;
+    padding-top: 7em;
+    padding-bottom: 7em;
+    margin-left: auto;
+    margin-right: auto;
+}
+#assin{
+    font-size: 50px;
+    margin-bottom: 20px;
+    margin-left: 40%;
+}
+#asslo{
+    color: #83c6cf;
+    font-size:20px;
+}
+#assForm{
+    margin-left: auto;
+    padding-left: auto;
+}
+
+button#assBtn{
+    width: 70%;
+    border-color: #83c6cf;
+    background-color: #07cde7
+        
+}
+
+#inputPassword2{
+    background-color: #0b7886;
+    color: white !important;
+    border: solid #83c6cf !important;
+    border-width: 0.1px;
+    border-color: #83c6cf;
+    
+}
+#sob{
+    color:black !important;
+ 
+    font-size: 1rem;
+
+}
+#fim{
+    font-size: 85%
+}

@@ -71,11 +71,57 @@ function calculamedia(aluno) {
 
 var botao = document.querySelector(".adiciona-button");
 
-botao.addEventListener("click", function (event) { event.preventDefault();
-
+    botao.addEventListener("click", function(event) {
+    event.preventDefault();
     var ra = document.querySelector(".form-adiciona").querySelector("#ra");
+    var nome = document.querySelector(".form-adiciona").querySelector("#nome");
+    var p1 = document.querySelector(".form-adiciona").querySelector("#p1");
+    var p2 = document.querySelector(".form-adiciona").querySelector("#p2");
+    var p3 = document.querySelector(".form-adiciona").querySelector("#p3");
+    var p4 = document.querySelector(".form-adiciona").querySelector("#p4");
 
-    console.log(ra.textContent);
+    var trAluno = document.createElement("tr");
+    var tdNome = document.createElement("td");
+    var tdp1 = document.createElement("td");
+    var tdp2 = document.createElement("td");
+    var tdp3 = document.createElement("td");
+    var tdp4 = document.createElement("td");
+    
+    var tdra = document.createElement("th");
+
+
+
+    tdNome.setAttribute("class","nome");
+    trAluno.setAttribute("class","aluno");
+    tdRa.setAttribute("scope","row");
+    tdp1.setAttribute("class","p1");
+    tdp2.setAttribute("class","p2");
+    tdp3.setAttribute("class","p3");
+    tdp4.setAttribute("class","p4");
+
+
+    tdNome.textContent = nome.value;
+    tdra.textContent = ra.value;
+    tdp1.textContent = p1.value;
+    tdp2.textContent = p2.value;
+    tdp3.textContent = p3.value;
+    tdp4.textContent = p4.value;
+ 
+
+    trAluno.appendChild(tdra);
+    trAluno.appendChild(tdNome);
+    trAluno.appendChild(tdp1);
+    trAluno.appendChild(tdp2);
+    trAluno.appendChild(tdp3);
+    trAluno.appendChild(tdp4);    
+    trAluno.appendChild(tdmedia);
+    trAluno.appendChild(tdaprovado);
+
+    
+
+    var tableAluno = document.querySelector("table").querySelector("body");
+    tableAluno.appendChild(trAluno);
+
+    console.log(document.querySelector("table"));
 
 });
-/

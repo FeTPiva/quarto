@@ -118,6 +118,7 @@ public class FXMLDocumentController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }
+   
 
     @FXML
     private void login(ActionEvent event) {
@@ -135,18 +136,19 @@ public class FXMLDocumentController implements Initializable {
 
                 if (senha.equals(txtSenha.getText()) && email.equals(txtUser.getText())) {
                     System.out.println("logado com sucesso");
-                    //tab2.setDisable(false);
-                    //tab3.setDisable(false);
+                    tab2.setDisable(false);
+                    tab3.setDisable(false);
+                    //jogar mensagens pra telinha depois
                 } else {
-                    System.out.println("fail");
+                    System.out.println("Não foi possivel logar! Senha ou usuário errados");
                 }
             }
             ps.close();
             //conexao.close();
 
         } catch (SQLException ex) {
-            System.out.println("lascou");
-            System.out.println(ex.getMessage());
+            System.out.println("Problema na conexão com a base de dados(login): " + ex.getMessage());
+            
         }
 
     }
@@ -174,8 +176,8 @@ public class FXMLDocumentController implements Initializable {
             ps.close();
 
         } catch (SQLException ex) {
-            System.out.println("Erro na conexão select");
-            System.out.println(ex);
+            System.out.println("Erro na conexão(select venda): "+ ex.getMessage());
+            
         }
 
         if (quantidadevendas <= quantidade) {
@@ -193,11 +195,11 @@ public class FXMLDocumentController implements Initializable {
                 
                 
             } catch (SQLException ex) {
-                System.out.println("Erro na conexão update");
-                System.out.println(ex);
+                System.out.println("Erro na conexão(update venda): "+ ex.getMessage());
+              
             }
         } else {
-            System.out.println("Não foi possível realizar a venda");
+            System.out.println("Não foi possível realizar a venda.\nVerifique se há quantidade suficiente no estoque ou se os dados da peça estão corretos");
         }
 
     }
@@ -209,7 +211,6 @@ public class FXMLDocumentController implements Initializable {
 
         PreparedStatement ps;
         try {
-
             ps = conexao.prepareStatement(sql);
             ps.setString(1, cadastroNome.getText());
             ps.setInt(2, Integer.parseInt(cadastroQuant.getText()));
@@ -266,10 +267,10 @@ public class FXMLDocumentController implements Initializable {
 
             ps.execute();
             ps.close();
-            System.out.println("não lascou :D");
+            System.out.println("produto cadastrado com sucesso!");
         } catch (SQLException ex) {
-            System.out.println("lascouuuu ,-, lembra de olha se o nome da tab ta certo, e do esquema '-'");
-            System.out.println(ex);
+            System.out.println("Erro no cadastro(insert cadastro): "+ ex.getMessage());
+           
         }
 
     }
@@ -297,8 +298,8 @@ public class FXMLDocumentController implements Initializable {
             ps.close();
 
         } catch (SQLException ex) {
-            System.out.println("Erro na conexão");
-            System.out.println(ex);
+            System.out.println("Erro na conexão(select pesquisa): " + ex.getMessage());
+         
         }
 
     }

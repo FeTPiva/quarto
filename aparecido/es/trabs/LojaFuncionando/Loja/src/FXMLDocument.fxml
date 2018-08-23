@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="423.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXMLDocumentController">
+<TabPane fx:id="TabPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="423.0" prefWidth="600.0" styleClass="tabPane" stylesheets="@loja.css" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXMLDocumentController">
   <tabs>
     <Tab fx:id="tab1" text="Login">
       <content>
-        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" stylesheets="@loja.css">
           <children>
-            <Button fx:id="btn" layoutX="254.0" layoutY="228.0" mnemonicParsing="false" onAction="#login" text="Login" />
+            <Button fx:id="btn" layoutX="254.0" layoutY="228.0" mnemonicParsing="false" onAction="#login" stylesheets="@loja.css" text="Login" textAlignment="CENTER" />
             <Label layoutX="171.0" layoutY="71.0" text="User/Email" />
-            <Label layoutX="171.0" layoutY="146.0" text="Senha" />
+            <Label layoutX="171.0" layoutY="146.0" stylesheets="@loja.css" text="Senha" />
             <TextField fx:id="txtUser" layoutX="171.0" layoutY="106.0" />
             <TextField fx:id="txtSenha" layoutX="171.0" layoutY="180.0" />
           </children>

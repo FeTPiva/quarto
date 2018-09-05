@@ -214,6 +214,8 @@ public class FXMLDocumentController implements Initializable {
             ps = conexao.prepareStatement(sql);
             ps.setString(1, cadastroNome.getText());
             ps.setInt(2, Integer.parseInt(cadastroQuant.getText()));
+           
+          
             if (camiseta.isSelected()) {
                 ps.setString(3, camiseta.getText());
                 System.out.println("entrei");
